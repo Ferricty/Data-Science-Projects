@@ -16,9 +16,9 @@
 -  Create an .exe aplication.
 
 ## Reading the data:
-### In the following picture are present the structure of each excel spreadsheet that is need to proccess.
+ In the following picture are present the structure of each excel spreadsheet that is need to proccess.
 ![Original Data](img/OriginalData.png)
-### Reading an excel document is a simple step. The function read_excel() of pandas library allows to do it.
+ Reading an excel document is a simple step. The function read_excel() of pandas library allows to do it.
 ```python
 import pandas as pd
 df=pd.read_excel("1.xlsx", index_col=None)
@@ -32,7 +32,7 @@ df.insert(0,"Municipios","")
 !["Municipios" column was inserted](img/InsertedMunicipioscolumn.png)
 
 ## Analize "Cliente" column and obtain the region of each company.
-### With a bucle for through "Cliente" column we can accomplish this task.
+ With a bucle for through "Cliente" column we can accomplish this task.
 ```python
 cant=[0]    #This list will save the index of each region for delete this rows
 x=[0]       #This list will save the region name and the amount of companies present in each one
@@ -99,7 +99,7 @@ df_all.to_excel("DataReady.xlsx",index=False)
  At the bottom right corner we can see the total of the data: 26178 cells with information.
 
 ___
-# Updating this solution doing parallel programing:
+## Updating this solution doing parallel programing:
 
 ```python
 import multiprocessing    #Used for implement multiprocesses simultaneusly
@@ -114,8 +114,8 @@ if __name__=="__main__":
     print(end-start)
 
 ```
-#### For more detail the code is available on Fast_Formatting_Data.py
-#### The result of the comparation are exposed in the following table.
+ For more detail the code is available on Fast_Formatting_Data.py
+ The result of the comparation are exposed in the following table.
 
 
 |    Parallel Programing       | Time(s)           |
@@ -123,7 +123,7 @@ if __name__=="__main__":
 |         Using                |  5.586912393569946|
 |         Not using            | 12.405641317367554|
 
-### We do the code 2.22 times faster!!
+ We do the code 2.22 times faster!!
 ## Our program it's ready. Let's make a .exe aplication using auto-py-to-exe.
 
  Seting the following options for make an one file with ico and console hiden aplication:

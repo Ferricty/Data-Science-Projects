@@ -6,30 +6,30 @@
 
 ## Tasks:
 - ### Reading the data:
-- ### Create a $"Municipios"$ column and fill with the data adquired in the next step.
-- ### Analize $"Cliente"$ column and obtain the region of each company.
-- ### Delete $"Bonif.$ $pago$ $electrónico (\$)"$ and $"Bonif.$ $pronto$ $pago (\$)"$ columns.
-- ### Create an $"Años"$ column with the year of the $"Fecha$ $pago"$ columns.
-- ### Set the apropiate format to $"Fecha$ $pago"$ and $"Período"$ columns to allow filter the information.
-- ### Create a new excel spreadsheet with the total of data processed with name $"DataReady.xlsx"$
+- ### Create a "Municipios" column and fill with the data adquired in the next step.
+- ### Analize "Cliente" column and obtain the region of each company.
+- ### Delete "Bonif. pago electrónico (\$)" and "Bonif. pronto pago (\$)" columns.
+- ### Create an "Años" column with the year of the "Fecha pago" columns.
+- ### Set the apropiate format to "Fecha pago" and "Período" columns to allow filter the information.
+- ### Create a new excel spreadsheet with the total of data processed with name "DataReady.xlsx"
 - ### Updating this solution doing parallel programing.
 - ### Create an .exe aplication.
 
 ## Reading the data:
 ### In the following picture are present the structure of each excel spreadsheet that is need to proccess.
-![Original Data](OriginalData.png)
+![Original Data](img/OriginalData.png)
 ### Reading an excel document is a simple step. The function read_excel() of pandas library allows to do it.
 ```python
 import pandas as pd
 df=pd.read_excel("1.xlsx", index_col=None)
 ```
-## Create a $"Municipios"$ column and fill with the data adquired in the next step.
-### The $"Municipios"$ column was inserted at the begining of the table.
+## Create a "Municipios" column and fill with the data adquired in the next step.
+### The "Municipios" column was inserted at the begining of the table.
 ```python
 df.insert(0,"Municipios","")
 ```
 
-![$"Municipios"$ column was inserted](InsertedMunicipioscolumn.png)
+!["Municipios" column was inserted](InsertedMunicipioscolumn.png)
 
 ## Analize $"Cliente"$ column and obtain the region of each company.
 ### With a bucle for through $"Cliente"$ column we can accomplish this task.

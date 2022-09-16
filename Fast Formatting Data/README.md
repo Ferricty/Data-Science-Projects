@@ -24,15 +24,15 @@ import pandas as pd
 df=pd.read_excel("1.xlsx", index_col=None)
 ```
 ## Create a "Municipios" column and fill with the data adquired in the next step.
-### The "Municipios" column was inserted at the begining of the table.
+ The "Municipios" column was inserted at the begining of the table.
 ```python
 df.insert(0,"Municipios","")
 ```
 
-!["Municipios" column was inserted](InsertedMunicipioscolumn.png)
+!["Municipios" column was inserted](img/InsertedMunicipioscolumn.png)
 
-## Analize $"Cliente"$ column and obtain the region of each company.
-### With a bucle for through $"Cliente"$ column we can accomplish this task.
+## Analize "Cliente" column and obtain the region of each company.
+### With a bucle for through "Cliente" column we can accomplish this task.
 ```python
 cant=[0]    #This list will save the index of each region for delete this rows
 x=[0]       #This list will save the region name and the amount of companies present in each one
@@ -47,40 +47,39 @@ for i in df["Cliente"]:
 df.drop(labels=cant, inplace=True)      #Deleting all the rows present in "Cliente" column that have the region name. The last row of this column is a total of the amount of companies, by this also is deleted.
 ```
 
-![Fill "Municipios" column inserted](FillInsertedMunicipioscolumn.png)
+![Fill "Municipios" column inserted](img/FillInsertedMunicipioscolumn.png)
 
 
-## Delete $"Bonif.$ $pago electrónico (\$)"$ and $"Bonif.$ $pronto$ $pago (\$)"$ columns.
-### With drop we delete the columns and set inplace=True for saving the changes in the excel document
+## Delete "Bonif. pago electrónico (\$)" and "Bonif. pronto pago (\$)" columns.
+With drop we delete the columns and set inplace=True for saving the changes in the excel document
 
 ```python
 df_all.drop(columns=["Bonif. pago electrónico ($)","Bonif. pronto pago ($)"], inplace=True)
 ```
-![Deleting "Bonif. pago electrónico ($)","Bonif. pronto pago ($)" columns](DeletingColumns.png)
+![Deleting "Bonif. pago electrónico ($)","Bonif. pronto pago ($)" columns](img/DeletingColumns.png)
 
 
-## Create an $"Años"$ column with the year of the $"Fecha$ $pago"$ columns.
+## Create an "Años" column with the year of the "Fecha pago" columns.
 
 ```python
 df["Años"]=pd.to_datetime(df["Fecha pago"]).dt.year
 ```
 
-![Adding Años Column](AddingAñosColumn.png)
+![Adding Años Column](img/AddingAñosColumn.png)
 
 
-## Set the apropiate format to $"Fecha$ $pago"$ and $"Período"$ columns to allow filter the information.
+## Set the apropiate format to "Fecha pago" and "Período" columns to allow filter the information.
 ```python
 df["Período"] = pd.to_datetime(df["Período"]).dt.strftime('%d/%m/%Y')
 df["Fecha pago"] = pd.to_datetime(df["Fecha pago"]).dt.strftime('%d/%m/%Y')
 ```
 
 
-![Seting format to Periodo and Fecha de Pago columns](FormatPeriodoandFechadePagocolumns.png)
+![Seting format to Periodo and Fecha de Pago columns](img/FormatPeriodoandFechadePagocolumns.png)
 
 ## Create a new excel spreadsheet with the total of data processed.
 
-### Importing os we can acomplish this task implementing a bucle for in the directory.
-### Note: the previus fragments of code was implemented in save_data_pandas() function. For more detail check the full code available in Function_Fast_Formatting_Data.py
+ Importing os we can acomplish this task implementing a bucle for in the directory.
 
 ```python
 import os
@@ -93,11 +92,11 @@ for filename in os.listdir():
 df_all=pd.concat(listas, sort=False)
 df_all.to_excel("DataReady.xlsx",index=False)  
 ```
-![After execute](After.png)
+![After execute](img/After.png)
 
-### I set orange color to background font of $"Cliente"$ column for protect the companies information.
+ I set orange color to background font of "Cliente" column for protect the companies information.
 
-### At the bottom right corner we can see the total of the data: 26178 cells with information.
+ At the bottom right corner we can see the total of the data: 26178 cells with information.
 
 ___
 # Updating this solution doing parallel programing:
@@ -127,11 +126,11 @@ if __name__=="__main__":
 ### We do the code 2.22 times faster!!
 ## Our program it's ready. Let's make a .exe aplication using auto-py-to-exe.
 
-### Seting the following options for make an one file with ico and console hiden aplication:
+ Seting the following options for make an one file with ico and console hiden aplication:
 ![exe creation](exe.png)
 
 # Conclusion
 
-### Before this solution the employees spend near of two days of work giving format to the data and after this proccess make an excel dinamic table with the goal of analyze them.
+ Before this solution the employees spend near of two days of work giving format to the data and after this proccess make an excel dinamic table with the goal of analyze them.
 
-### ...Actually they need paste this solution in the folder that contains only the excel's and spend one click.
+ ...Actually they need paste this solution in the folder that contains only the excel's and spend one click.

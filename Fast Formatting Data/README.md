@@ -83,14 +83,33 @@ df["Fecha pago"] = pd.to_datetime(df["Fecha pago"]).dt.strftime('%d/%m/%Y')
 
 ```python
 import os
+import pandas as pd
 listas=[]
 for filename in os.listdir():
-    if filename!="Fast_Formatting_Data.py":
-        save_data_pandas(filename)
-        listas.append(pd.read_excel(filename, index_col=None))
+    if filename!="Fast_Formatting_Data.py" and filename!="__pycache__" and filename!="Fast_Formatting_Data.exe":
+        df=pd.read_excel(filename, index_col=None) 
+        cant=[0]
+        df.insert(0,"Municipios","")
+        x=[0]
+        inicio=0   
+        for i in df["Cliente"]:
+            if str(i)[:3]=="DPA":
+                    x=str(i).split("(Cant.=")
+                    df.iloc[inicio:,0]=x[0]
+                    inicio=inicio+int(x[1][0:-1])+1
+                    cant.append(inicio)
+        df.drop(labels=cant, inplace=True)
+        listas.append(df)
 
 df_all=pd.concat(listas, sort=False)
-df_all.to_excel("DataReady.xlsx",index=False)  
+df_all.drop(columns=["Bonif. pago electrónico ($)","Bonif. pronto pago ($)"], inplace=True)
+
+df_all["Período"] = pd.to_datetime(df_all["Período"]).dt.strftime('%d/%m/%Y')
+df_all["Fecha pago"] = pd.to_datetime(df_all["Fecha pago"]).dt.strftime('%d/%m/%Y')
+df_all["Años"]=pd.to_datetime(df_all["Fecha pago"]).dt.year
+df_all.to_excel("DataReady.xlsx",index=False) 
+
+
 ```
 ![After execute](img/After.png)
 
@@ -106,7 +125,7 @@ import multiprocessing    #Used for implement multiprocesses simultaneusly
 import time               #Used for calculate the time of execution
 if __name__=="__main__":
     start=time.time()
-    processes=multiprocessing.Process(target=format_data)
+    processes=multiprocessing.Process(target=format_data)   #format_data it's a function that include all the code of the last step
     processes.start()   #   Start processes
     processes.join()    #   Block the execution of the main program until processes finalize
             

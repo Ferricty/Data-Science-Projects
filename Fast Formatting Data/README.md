@@ -94,7 +94,7 @@ df_all.to_excel("DataReady.xlsx",index=False)
 ```
 ![After execute](img/After.png)
 
- I set orange color to background font of "Cliente" column for protect the companies information.
+ I set orange color to background and font of "Cliente" column for protect the companies information.
 
  At the bottom right corner we can see the total of the data: 26178 cells with information.
 

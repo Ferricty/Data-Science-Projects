@@ -146,7 +146,7 @@ if __name__=="__main__":
 ## Our program it's ready. Let's make a .exe aplication using auto-py-to-exe.
 
  Seting the following options for make an one file with ico and console hiden aplication:
-![exe creation](exe.png)
+![exe creation](img/exe.png)
 
 # Conclusion
 

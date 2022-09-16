@@ -1,8 +1,8 @@
 import multiprocessing
 import pandas as pd
 import os
-#import time
-#s=time.time()
+import time
+start=time.time()
 dir=os.listdir()
 def format_data():
     listas=[]
@@ -26,8 +26,8 @@ def format_data():
     df_all=pd.concat(listas, sort=False)
     df_all.drop(columns=["Bonif. pago electrónico ($)","Bonif. pronto pago ($)","Canal pago"], inplace=True)
     
-    #df_all["Período"] = pd.to_datetime(df_all["Período"]).dt.strftime('%d/%m/%Y')
-    #df_all["Fecha pago"] = pd.to_datetime(df_all["Fecha pago"]).dt.strftime('%d/%m/%Y')
+    df_all["Período"] = pd.to_datetime(df_all["Período"]).dt.strftime('%d/%m/%Y')
+    df_all["Fecha pago"] = pd.to_datetime(df_all["Fecha pago"]).dt.strftime('%d/%m/%Y')
     df_all["Años"]=pd.to_datetime(df_all["Fecha pago"]).dt.year
     df_all.to_excel("DataReady.xlsx",index=False) 
 if __name__=="__main__":
@@ -35,11 +35,11 @@ if __name__=="__main__":
     processes=multiprocessing.Process(target=format_data)
     processes.start()
     processes.join()
-#e=time.time()
-#print(e-s)
+end=time.time()
+print(end-start)
 
 
-#The full code uncomented works!!
+
 
 
 

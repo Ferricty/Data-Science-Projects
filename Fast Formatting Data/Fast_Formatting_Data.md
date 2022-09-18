@@ -132,8 +132,8 @@ if __name__=="__main__":
     print(end-start)
 
 ```
-#### For more detail the code is available on Fast_Formatting_Data.py
-#### The results of the comparison are exposed in the following table.
+For more detail the code is available on Fast_Formatting_Data.py
+The results of the comparison are exposed in the following table.
 
 
 |    Parallel Programing       | Time(s)           |

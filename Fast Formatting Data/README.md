@@ -144,11 +144,11 @@ The results of the comparison are exposed in the following table.
 We make the code 2.22 times faster!!
 ## Our program it's ready. Let's make a .exe aplication using auto-py-to-exe.
 
-Seting the following options for make an one file with ico and console hiden aplication:
+Seting the following options to make a single file with ico and console hidden application:
 ![exe creation](img/exe.png)
 
 # Conclusion
 
-Before this solution the employees uses to spent two days of work formatting and reuniting the data.
+Before this solution the employees used to spent two days of work formatting and reuniting the data.
 
 ...Currently they can do it with just pasting the program, inside the folder that contains the excels's and clicking on it.

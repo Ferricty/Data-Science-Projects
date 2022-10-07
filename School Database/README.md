@@ -932,4 +932,4 @@ The aplication allows a better manage of the data of students and teachers for a
 
 This project was a real challenge. The use of Tkinter for the visual interface and the integration with the database created in sqlite3 was an amazing experience for me as a developer.
 
-I want to thanks all the people of Stack Overflow forums, and some many web sites such as w3schools, freecodecamp and specially to the codemy youtube channel dedicated to Tkinter for the wonderfull knowledge that it sharesa on the Internet.
+I want to thanks all the people of Stack Overflow forums, and some many web sites such as w3schools, freecodecamp and specially to the codemy youtube channel dedicated to Tkinter for the wonderfull knowledge that it shares on the Internet.

@@ -928,8 +928,8 @@ Seting the following options to make a single file with ico and console hiden ap
 ![exe running](img/runningexe.png)
 # Conclusion
 
-The aplication allows a better manage of the data of students and teachers for a school. 
+The aplication allows a better management of student's and teacher's data for a school. 
 
 This project was a real challenge. The use of Tkinter for the visual interface and the integration with the database created in sqlite3 was an amazing experience for me as a developer.
 
-I want to thanks all the people of Stack Overflow forums, and some many web sites such as w3schools, freecodecamp and specially to the codemy youtube channel dedicated to Tkinter for the wonderfull knowledge that it shares on the Internet.
+I want to thanks all the people of Stack Overflow forums, and some many web sites such as w3schools, freecodecamp and specially to the codemy youtube channel devoted to the work with Tkinter for the wonderfull knowledge they share on the Internet.

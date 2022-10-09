@@ -1,6 +1,6 @@
 # ***School Database***
 
-This project was made for a local school to help in the manage of their students and teachers. 
+This project was made for a local school to help in the managing their students and teachers. 
                                                       
 Information such as the names was changed or hidden to protect the confidenciality of the data provided.
 
@@ -16,9 +16,9 @@ Information such as the names was changed or hidden to protect the confidenciali
 - ### Create a clock widget.
 - ### Allow save information of students and teachers in csv or excels files
 - ### Create the CRUD (Create,Read,Update and Delete) for both tables.
-    * Analize the number of students that fail his tests of "Matemáticas","Español" or "Historia"
+    * Analize the number of students that failed their tests of "Matemáticas","Español" or "Historia"
     * Analize the AVG (average) in "Matemáticas","Español" or "Historia"
-    * Analize the number of students that score more of 95 points in his tests of "Matemáticas","Español" or "Historia"
+    * Analize the number of students that scored more than points in their tests of "Matemáticas","Español" or "Historia"
     * Create new students or teachers
     * Read elements  
     * Update students or teachers information
@@ -292,16 +292,16 @@ def write_to_csv(estudiante_o_profesor,resultado):
             w.writerow(i)
 ```
 ## Create the CRUD (Create,Read,Update and Delete) for both tables.
-    * Analize the number of students that fail his tests of "Matemáticas","Español" or "Historia"
+    * Analize the number of students that failed their tests of "Matemáticas","Español" or "Historia"
     * Analize the AVG (average) in "Matemáticas","Español" or "Historia"
-    * Analize the number of students that score more of 95 points in his tests of "Matemáticas","Español" or "Historia"
+    * Analize the number of students that scored more than 95 points in their tests of "Matemáticas","Español" or "Historia"
     * Create new students or teachers
     * Read elements  
     * Update students or teachers information
     * Delete students or teachers of the table
     * Sort students or teachers information 
 
-For best comprehension I will split the explanation in two differents parts. One will be the code that build the visual interface and another the processing of the actions (SQL sentences in Python code).
+For best comprehension I will split the explanation in two differents parts. One will be the code that builds the visual interface and the other one with the processing of the actions (SQL sentences in Python code).
 
 - Create new students or teachers
    * Visual Interface 
@@ -356,13 +356,13 @@ def new_teacher_or_student(estudiante_o_profesor):
     submit_btn=Button(top_add,activebackground=PANEL_RIGHT_COLOR,cursor="hand2",image=mybtnagreeimg,borderwidth=0,bg=PANEL_RIGHT_COLOR,command=lambda:submit_teacher_or_student(estudiante_o_profesor))
     submit_btn.grid(column=1,row=6,pady=(10,0),padx=5)  
 ```
-The following picture shows the windows of create new students and teachers
+The following picture shows the windows to create new students or teachers
 
 <p align="center">
     <img alt="Widget created until now" src="img/creationstudentteachers.png">
 </p>
 
-The following picture shows the error message inputs by blanck fields or no students in a group when a professor is created.
+The following picture shows the error message that appears when there are empty fields and when a professor is created in a group without students.
 
 <p align="center">
     <img alt="Error message input. Blanck fields or no students in a group when a professor is created" src="img/errormessagesinput.png">
@@ -448,7 +448,7 @@ def submit_teacher_or_student(estudiante_o_profesor):
 - Read elements and Sort students or teachers information 
     * Visual Interface
 
-With the goal of better visualization of the data and the actions of the buttons I insert more data in the tables.
+With the goal of better visualization of the data and the actions of the buttons I inserted more data in the tables.
 
 
 ```python
@@ -559,9 +559,9 @@ def tablas_de_trabajo(valor):
     clock_admin()
 ```
 - ## Stadistics
-    * Analize the number of students that fail his tests of "Matemáticas","Español" or "Historia"
+    * Analize the number of students that failed their tests of "Matemáticas","Español" or "Historia"
     * Analize the AVG (average) in "Matemáticas","Español" or "Historia"
-    * Analize the number of students that score more of 95 points in his tests of "Matemáticas","Español" or "Historia"
+    * Analize the number of students that scored more than 95 points in their tests of "Matemáticas","Español" or "Historia"
 
 ```python
 def metodos_estadisticos(asignatura,filtrado_por_aula=False):
@@ -714,7 +714,7 @@ def buscar_ahora(estudiante_o_profesor):
 
 ![Query the data](img/filterdata.png)
 
-- Update students or teachers information
+- Update student's or teacher's information
     * Visual Interface
 
 ```python
@@ -785,7 +785,7 @@ def editar_ahora(estudiante_o_profesor,id_reference):
 ```
 ![Edit window](img/editwindow.png)
 
-- Update students or teachers information
+- Update student's or teacher's information
     * Processing of the actions (SQL sentences in Python code)
 
 ```python
@@ -920,9 +920,9 @@ Sorting data by "Historia" score descending order
 
 ## Create an .exe aplication.
 
-Our program it's ready. Let's make a .exe aplication using auto-py-to-exe.
+Our program it's ready. Let's make an .exe aplication using auto-py-to-exe.
 
-Seting the following options for make an one file with ico and console hiden aplication:
+Seting the following options to make a single file with ico and console hiden aplication:
 ![exe creation](img/exe.png)
 
 ![exe running](img/runningexe.png)

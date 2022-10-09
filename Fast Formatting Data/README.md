@@ -130,7 +130,7 @@ At the bottom right corner we can see the total of the data: 26178 cells with in
 
 ## Our program it's ready. Let's make a .exe aplication using auto-py-to-exe.
 
-Seting the following options for make an one file with ico and console hiden aplication:
+Seting the following options to make a single file with ico and console hiden aplication:
 ![exe creation](img/exe.png)
 
 

@@ -138,4 +138,4 @@ Seting the following options for make an one file with ico and console hiden apl
 
 Before this solution the employees used to spent two days of work formatting and reuniting the data.
 
-...Currently they can do it with just pasting the program, inside the folder that contains the excels's and clicking on it.
+...Currently they can do it with just pasting the program inside the folder that contains the excels's and clicking on it.

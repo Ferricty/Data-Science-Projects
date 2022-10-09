@@ -53,7 +53,7 @@ df.drop(labels=cant, inplace=True)      #Deleting all the rows present in "Clien
 
 
 ## Delete "Bonif. pago electrónico (\$)" and "Bonif. pronto pago (\$)" columns.
-With drop we delete the columns and set inplace=True for saving the changes in the excel document
+With the drop command we delete the columns and set inplace=True for saving the changes in the excel document
 
 ```python
 df_all.drop(columns=["Bonif. pago electrónico ($)","Bonif. pronto pago ($)"], inplace=True)
@@ -136,6 +136,6 @@ Seting the following options for make an one file with ico and console hiden apl
 
 # Conclusion
 
-Before this solution the employees uses to spent two days of work formatting and reuniting the data.
+Before this solution the employees used to spent two days of work formatting and reuniting the data.
 
 ...Currently they can do it with just pasting the program, inside the folder that contains the excels's and clicking on it.

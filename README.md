@@ -14,3 +14,4 @@
     * [Bob the Builder](https://github.com/Ferricty/Data-Science-Projects/blob/main/Sololearn/Machine%20Learning/Sololearn_Bob_the_Builder_Solution.ipynb)
     * [Welcome to the Matrix](https://github.com/Ferricty/Data-Science-Projects/blob/main/Sololearn/Machine%20Learning/Sololearn_Welcome_to_the_Matrix.ipynb)
     * [Split to Achieve Gain](https://github.com/Ferricty/Data-Science-Projects/blob/main/Sololearn/Machine%20Learning/Split%20to%20Achieve%20Gain.ipynb)
+    * [What's in a column](https://github.com/Ferricty/Data-Science-Projects/blob/main/Sololearn/Machine%20Learning/What's%20is%20in%20a%20Column.ipynb)

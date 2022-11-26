@@ -11,4 +11,4 @@
 4. [Scrapping data from ETECSA Web Page](https://github.com/Ferricty/Data-Science-Projects/blob/main/Scrapping%20data%20from%20ETECSA%20Web%20Page/Scrapping%20data%20from%20ETECSA%20Web%20Page.ipynb)
 5. [Most Played Steam Games](https://github.com/Ferricty/Data-Science-Projects/blob/main/Most%20Played%20Steam%20Games/Most%20Played%20Steam%20Games.ipynb)
 6. Machine Learning Sololearn Certification
-    * [Bob the Builder](https://github.com/Ferricty/Data-Science-Projects/blob/main/Sololearn/Sololearn_Bob_the_Builder_Solution.ipynb)
+    * [Bob the Builder](https://github.com/Ferricty/Data-Science-Projects/blob/main/Sololearn/Machine%20Learning/Sololearn_Bob_the_Builder_Solution.ipynb)

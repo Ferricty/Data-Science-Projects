@@ -12,3 +12,4 @@
 5. [Most Played Steam Games](https://github.com/Ferricty/Data-Science-Projects/blob/main/Most%20Played%20Steam%20Games/Most%20Played%20Steam%20Games.ipynb)
 6. Machine Learning Sololearn Certification
     * [Bob the Builder](https://github.com/Ferricty/Data-Science-Projects/blob/main/Sololearn/Machine%20Learning/Sololearn_Bob_the_Builder_Solution.ipynb)
+    * [Welcome to the Matrix](https://github.com/Ferricty/Data-Science-Projects/blob/main/Sololearn/Machine%20Learning/Sololearn_Welcome_to_the_Matrix.ipynb)

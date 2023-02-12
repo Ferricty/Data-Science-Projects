@@ -15,3 +15,4 @@
     * [Welcome to the Matrix](https://github.com/Ferricty/Data-Science-Projects/blob/main/Sololearn/Machine%20Learning/Sololearn_Welcome_to_the_Matrix.ipynb)
     * [Split to Achieve Gain](https://github.com/Ferricty/Data-Science-Projects/blob/main/Sololearn/Machine%20Learning/Split%20to%20Achieve%20Gain.ipynb)
     * [What's in a column](https://github.com/Ferricty/Data-Science-Projects/blob/main/Sololearn/Machine%20Learning/What's%20in%20a%20Column.ipynb)
+7. [Happy Valentine!!](https://github.com/Ferricty/Data-Science-Projects/blob/main/Happy%20Valentine/Happy%20Valentine!!.ipynb)

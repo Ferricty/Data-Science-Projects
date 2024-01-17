@@ -58,6 +58,7 @@ With the drop command we delete the columns and set inplace=True for saving the 
 ```python
 df_all.drop(columns=["Bonif. pago electrónico ($)","Bonif. pronto pago ($)"], inplace=True)
 ```
+![Deleting "Bonif. pago electrónico ($)","Bonif. pronto pago ($)" columns](img/DeletingColumns.png)
 
 ## Create an "Años" column with the year of the "Fecha pago" columns.
 

@@ -60,7 +60,6 @@ df_all.drop(columns=["Bonif. pago electrónico ($)","Bonif. pronto pago ($)"], i
 ```
 ![Deleting "Bonif. pago electrónico ($)","Bonif. pronto pago ($)" columns](img/DeletingColumns.png)
 
-
 ## Create an "Años" column with the year of the "Fecha pago" columns.
 
 ```python
